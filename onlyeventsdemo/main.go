@@ -49,10 +49,10 @@ func main() {
 	orderCreated := &OrderCreated{
 		Model: eventsource.Model{ID: id, Version: 1, At: time.Now()},
 	}
-	orderAppoved := &OrderCreated{
+	orderAppoved := &OrderApproved{
 		Model: eventsource.Model{ID: id, Version: 2, At: time.Now()},
 	}
-	orderShipped := &OrderCreated{
+	orderShipped := &OrderShipped{
 		Model: eventsource.Model{ID: id, Version: 3, At: time.Now()},
 	}
 
